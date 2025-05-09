@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { useAztecWallet } from "~/hooks/useWallet";
 import Link from "next/link";
@@ -32,6 +30,7 @@ export default function HomePage() {
                 {!isConnected ? (
                     <button
                         onClick={connectWallet}
+						type="button"
                         disabled={isLoading}
                         className={styles.connectButton}
                         style={{

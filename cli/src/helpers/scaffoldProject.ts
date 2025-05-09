@@ -15,7 +15,7 @@ export const scaffoldProject = async ({
   pkgManager,
   noInstall,
 }: InstallerOptions) => {
-  const srcDir = path.join(PKG_ROOT, "template/base");
+  const baseDir = path.join(PKG_ROOT, "template/base");
 
   if (!noInstall) {
     logger.info(`\nUsing: ${chalk.cyan.bold(pkgManager)}\n`);
@@ -83,7 +83,8 @@ export const scaffoldProject = async ({
 
   spinner.start();
 
-  fs.copySync(srcDir, projectDir);
+  // Copy only the base directory content, not extras
+  fs.copySync(baseDir, projectDir);
   fs.renameSync(
     path.join(projectDir, "_gitignore"),
     path.join(projectDir, ".gitignore")

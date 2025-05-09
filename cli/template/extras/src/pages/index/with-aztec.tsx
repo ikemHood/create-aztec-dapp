@@ -1,21 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { useAztecWallet } from "~/hooks/useWallet";
 import Head from "next/head";
 import Link from "next/link";
 
 export default function Home(): React.ReactElement {
-    const [isConnected, setIsConnected] = useState(false);
-    const [walletAddress, setWalletAddress] = useState("");
     const [isLoading, setIsLoading] = useState(false);
+    const { connect, isConnected, address } = useAztecWallet();
 
     // Connect wallet function
     const connectWallet = async () => {
         setIsLoading(true);
         try {
-            // Here we would use the Aztec wallet SDK
-            // For this template, we'll just simulate a connection
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            setIsConnected(true);
-            setWalletAddress("0x1234...abcd"); // This would be the actual address
+            await connect();
         } catch (error) {
             console.error("Failed to connect wallet:", error);
         } finally {
@@ -59,6 +55,7 @@ export default function Home(): React.ReactElement {
                         <button
                             onClick={connectWallet}
                             disabled={isLoading}
+							type="button"
                             style={{
                                 display: "flex",
                                 alignItems: "center",
@@ -88,7 +85,7 @@ export default function Home(): React.ReactElement {
                                 borderRadius: "0.5rem",
                                 color: "white"
                             }}>
-                                Connected: {walletAddress}
+                                Connected: {address}
                             </div>
                             <p style={{
                                 fontSize: "1.25rem",

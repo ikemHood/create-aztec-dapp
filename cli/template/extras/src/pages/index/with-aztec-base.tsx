@@ -37,6 +37,7 @@ export default function Home() {
                     {!isConnected ? (
                         <button
                             onClick={connectWallet}
+							type="button"
                             disabled={isLoading}
                             className={styles.connectButton}
                             style={{

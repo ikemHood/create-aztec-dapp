@@ -35,6 +35,7 @@ export default function Home() {
                     {!isConnected ? (
                         <button
                             onClick={connectWallet}
+							type="button"
                             disabled={isLoading}
                             className={`flex items-center justify-center rounded-md bg-purple-700 px-6 py-3 text-lg font-medium text-white ${isLoading ? "cursor-not-allowed opacity-50" : "hover:bg-purple-600"}`}
                         >

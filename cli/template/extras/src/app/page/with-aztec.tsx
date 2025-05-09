@@ -32,6 +32,7 @@ export default function HomePage() {
                 {!isConnected ? (
                     <button
                         onClick={connectWallet}
+						type="button"
                         disabled={isLoading}
                         className={styles.connectButton}
                         style={{
