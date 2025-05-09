@@ -1,0 +1,79 @@
+---
+title: Installation
+description: Installation instructions for Create Aztec Dapp
+layout: ../../layouts/docs.astro
+lang: en
+isMdx: true
+---
+
+import Callout from "../../components/docs/callout.tsx";
+
+To scaffold an Aztec dapp using `create-aztec-dapp`, run any of the following commands and answer the command prompt questions:
+
+### npm
+
+```bash
+npm create aztec-dapp@latest
+```
+
+### yarn
+
+```bash
+yarn create aztec-dapp
+```
+
+### pnpm
+
+```bash
+pnpm create aztec-dapp@latest
+```
+
+### bun
+
+```bash
+bun create aztec-dapp@latest
+```
+
+## About Create Aztec Dapp
+
+Create Aztec Dapp is a CLI tool that helps you quickly set up a new Aztec decentralized application with all the best practices and configuration ready to go. It provides:
+
+- React templates for building your frontend
+- Aztec SDK integration for interacting with the protocol
+- Tailwind CSS support for styling
+- TypeScript for type safety
+- Aztec Sandbox for local development
+
+## CLI Options
+
+| Option/Flag       | Description                                                             |
+| ----------------- | ----------------------------------------------------------------------- |
+| `[dir]`           | Include a directory argument with a name for the project                |
+| `--noGit`         | Explicitly tell the CLI to not initialize a new git repo in the project |
+| `-y`, `--default` | Bypass the CLI and bootstrap a new dapp with all options selected       |
+| `--noInstall`     | Generate project without installing dependencies                        |
+
+## Getting Started
+
+Once your project is created:
+
+1. Navigate to your project directory:
+   ```bash
+   cd your-project-name
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open your browser and navigate to `http://localhost:3000` to see your new Aztec dapp!
+
+## Next Steps
+
+After installing your Aztec dapp, you can:
+
+1. Explore the project structure 
+2. Check out the Aztec SDK documentation
+3. Begin building your zero-knowledge application logic
+4. Deploy your contracts to an Aztec network

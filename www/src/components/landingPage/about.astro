@@ -1,0 +1,36 @@
+---
+import CliPreview from "./cli";
+import PageSection from "./pageSection.astro";
+---
+
+<PageSection
+  className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 pb-12 sm:px-6 lg:grid lg:gap-x-8 lg:px-8 xl:grid-cols-2 xl:gap-x-12"
+  size={"24"}
+  id="about"
+>
+  <div class="mx-auto flex max-w-[800px] flex-col gap-2 md:gap-4 xl:max-w-full">
+    <h2
+      class="mb-2 w-full text-3xl font-bold text-t3-purple-50 md:text-5xl lg:text-5xl"
+    >
+      Build on Aztec
+    </h2>
+    <p
+      class="mx-auto mt-4 max-w-3xl text-base text-t3-purple-200 md:text-xl lg:text-xl xl:text-xl"
+    >
+      We created create-aztec-dapp to streamline the setup of Aztec applications with an emphasis on developer experience and best practices.
+    </p>
+    <p
+      class="mx-auto mt-4 max-w-3xl text-base text-t3-purple-200 md:text-xl lg:text-xl xl:text-xl"
+    >
+      Aztec provides powerful privacy-focused solutions for your blockchain applications, and this CLI helps you get started quickly.
+    </p>
+    <p
+      class="mx-auto mt-4 max-w-3xl text-base text-t3-purple-200 md:text-xl lg:text-xl xl:text-xl"
+    >
+      This starter kit includes everything you need to build and deploy your first Aztec dApp with confidence.
+    </p>
+  </div>
+  <div class="min-h-[300px] md:min-h-[400px]">
+    <CliPreview client:only="react" />
+  </div>
+</PageSection>

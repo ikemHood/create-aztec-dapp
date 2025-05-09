@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #2e026d, #15162c);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: white;
+}
+
+.pinkSpan {
+  color: hsl(280, 100%, 70%);
+}
+
+.connectButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: white;
+  background-color: #9333ea;
+  border-radius: 0.375rem;
+  border: none;
+}
+
+.connectButton:hover {
+  background-color: #a855f7;
+}
+
+.connectedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.walletAddress {
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.readyText {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.cardRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 900px;
+}
+
+@media (min-width: 640px) {
+  .cardRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .title {
+    font-size: 5rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  color: white;
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cardText {
+  font-size: 1.125rem;
+} 
