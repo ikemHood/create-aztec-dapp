@@ -106,4 +106,4 @@ export const SIDEBAR = {
 
 ## Credits
 
-This documentation site was templated from the [create-t3-app](https://github.com/t3-oss/create-t3-app) project by the T3 community. We've modified it to focus specifically on Aztec development while maintaining the same high standards for developer experience.
+This documentation site was templated from the [create-t3-app](https://github.com/t3-oss/create-t3-app) project. We've modified it to focus specifically on Aztec development while maintaining the same high standards for developer experience.

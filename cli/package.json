@@ -1,12 +1,11 @@
 {
-  "name": "cli",
+  "name": "create-aztec-dapp",
   "version": "1.0.0",
   "description": "Create Aztec dApps with Next.js and Noir smart contracts",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/create-aztec-dapp.git",
-    "directory": "cli"
+    "url": "https://github.com/ikemHood/create-aztec-dapp.git"
   },
   "keywords": [
     "create-aztec-dapp",

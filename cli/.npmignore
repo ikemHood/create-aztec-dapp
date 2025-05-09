@@ -1,0 +1,21 @@
+# Source code
+src/
+tests/
+
+# Config files
+tsconfig.json
+tsup.config.ts
+.eslintrc.js
+.prettierrc
+.gitignore
+
+# Development files
+node_modules/
+coverage/
+.turbo/
+.vscode/
+.idea/
+
+# Misc
+*.log
+.DS_Store 

@@ -4,19 +4,19 @@ import { Fragment, useState } from "react";
 
 const commands = [
   {
-    command: "create t3-app@latest",
+    command: "create aztec-dapp@latest",
     manager: "npm",
   },
   {
-    command: "create t3-app",
+    command: "create aztec-dapp",
     manager: "yarn",
   },
   {
-    command: "create t3-app@latest",
+    command: "create aztec-dapp@latest",
     manager: "pnpm",
   },
   {
-    command: "create t3-app@latest",
+    command: "create aztec-dapp@latest",
     manager: "bun",
   },
 ];
