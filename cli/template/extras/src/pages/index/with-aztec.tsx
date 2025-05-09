@@ -24,12 +24,11 @@ export default function Home(): React.ReactElement {
     };
 
     return (
-        // @ts-ignore - Suppress Next.js Head component type error
         <>
             <Head>
                 <title>Aztec dApp</title>
                 <meta name="description" content="Aztec dApp with smart contracts" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <main style={{
                 display: "flex",

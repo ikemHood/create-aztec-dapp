@@ -26,7 +26,7 @@ export default function Home() {
             <Head>
                 <title>Aztec dApp</title>
                 <meta name="description" content="Aztec dApp with smart contracts" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <main className={styles.main}>
                 <div className={styles.container}>

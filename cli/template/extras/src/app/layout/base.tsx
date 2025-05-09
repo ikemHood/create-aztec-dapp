@@ -7,7 +7,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Aztec dApp",
   description: "Aztec dApp with Noir smart contracts",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/favicon.png" }],
 };
 
 const geist = Geist({
