@@ -1,8 +1,10 @@
-# create-aztec-dapp
+# create-aztec-dapp 🚀
+
+🌐 [Website](https://create-aztec-dapp.vercel.app/) | 📦 [NPM Package](https://www.npmjs.com/package/create-aztec-dapp)
 
 A CLI for creating Aztec dApps with the Next.js framework.
 
-## Usage
+## Usage 🛠️
 
 ### Interactive
 
@@ -26,30 +28,27 @@ pnpm create aztec-dapp
 bunx create-aztec-dapp
 ```
 
-## What's included?
+## What's included? 🎁
 
 By default, each new Aztec dApp will include:
 
-- [Next.js](https://nextjs.org) app router
-- [Tailwind CSS](https://tailwindcss.com)
-- [Noir Smart Contract](https://noir-lang.org/)
+- ⚡ [Next.js](https://nextjs.org) app router
+- 🎨 [Tailwind CSS](https://tailwindcss.com)
+- 🔒 [Noir Smart Contract](https://noir-lang.org/)
 
 You will have options to choose:
 
-- A contract type (currently only counter contracts are available, with more
-  coming soon)
-- Linting/formatting tools (ESLint + Prettier or Biome)
+- 📝 A contract type (currently only counter contracts are available, with more coming soon)
+- 🧹 Linting/formatting tools (ESLint + Prettier or Biome)
 
-## Features
+## Features ✨
 
-- **Integrated Smart Contracts**: Every Aztec dApp comes with a Noir smart
-  contract in the `contract` directory.
-- **Type Safety**: Built with TypeScript for a reliable development experience.
-- **Modern UI**: Tailwind CSS for responsive and beautiful UIs out of the box.
-- **Next.js App Router**: Uses the latest Next.js features for efficient routing
-  and rendering.
+- 🧠 **Integrated Smart Contracts**: Every Aztec dApp comes with a Noir smart contract in the `contract` directory.
+- 🛡️ **Type Safety**: Built with TypeScript for a reliable development experience.
+- 💎 **Modern UI**: Tailwind CSS for responsive and beautiful UIs out of the box.
+- 🗺️ **Next.js App Router**: Uses the latest Next.js features for efficient routing and rendering.
 
-## Development
+## Development 👩‍💻
 
 To develop and run the CLI locally:
 
@@ -60,10 +59,10 @@ pnpm install
 pnpm run build
 ```
 
-## Credits
+## Credits 🙏
 
 This project was templated from [create-t3-app](https://github.com/t3-oss/create-t3-app). We've modified it to focus specifically on Aztec development while maintaining the same high standards for developer experience.
 
-## License
+## License 📄
 
 MIT

@@ -10,7 +10,7 @@ import remarkCodeTitles from "remark-code-titles";
 
 /** @link https://astro.build/config */
 export default defineConfig({
-  site: `https://create.t3.gg/`,
+  site: `https://create-aztec-dapp.vercel.app`,
   output: "server",
   adapter: vercel(),
   markdown: {
