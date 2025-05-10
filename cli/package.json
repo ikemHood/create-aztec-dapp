@@ -1,6 +1,6 @@
 {
   "name": "create-aztec-dapp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create Aztec dApps with Next.js and Noir smart contracts",
   "license": "MIT",
   "repository": {
