@@ -21,6 +21,7 @@ import {
   getNpmVersion,
   renderVersionWarning,
 } from "./utils/renderVersionWarning.js";
+import { checkAndInstallAztec } from "./utils/checkAztecInstallation.js";
 
 type CT3APackageJSON = PackageJson & {
   ct3aMetadata?: {
@@ -36,7 +37,11 @@ const main = async () => {
   if (npmVersion) {
     renderVersionWarning(npmVersion);
   }
-
+  const aztecInstalled = await checkAndInstallAztec();
+  if (!aztecInstalled) {
+    logger.error("Aztec installation is required to create an Aztec dApp");
+    process.exit(1);
+  }
   const {
     appName,
     packages,
