@@ -20,8 +20,6 @@ generated/
 .astro
 
 # ENV FILES
-.env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -58,3 +56,4 @@ Thumbs.db
 
 # TYPESCRIPT
 *.tsbuildinfo
+config.bat
