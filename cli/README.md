@@ -38,7 +38,7 @@ By default, each new Aztec dApp will include:
 
 You will have options to choose:
 
-- 📝 A contract type (currently only counter contracts are available, with more coming soon)
+- 📝 A contract template (Counter, Voting, Token, or NFT examples)
 - 🧹 Linting/formatting tools (ESLint + Prettier or Biome)
 
 ## Features ✨

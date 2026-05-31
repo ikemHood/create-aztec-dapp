@@ -5,9 +5,10 @@ import { Command } from "commander";
 import { CREATE_T3_APP, DEFAULT_APP_NAME } from "~/consts.js";
 import {
   type AvailablePackages,
-  contractTypes,
+  noirContractTypes,
   type ContractType,
 } from "~/installers/index.js";
+import { getNoirTemplate } from "~/installers/noirTemplates.js";
 import { getVersion } from "~/utils/getT3Version.js";
 import { getUserPkgManager } from "~/utils/getUserPkgManager.js";
 import { IsTTYError } from "~/utils/isTTYError.js";
@@ -121,7 +122,7 @@ export const runCli = async (): Promise<CliResults> => {
     )
     .option(
       "--contractType [type]",
-      `Contract type to use. Possible values: ${contractTypes.join(", ")}`,
+      `Contract type to use. Possible values: ${noirContractTypes.join(", ")}`,
       "counter"
     )
     /** END CI-FLAGS */
@@ -225,9 +226,9 @@ export const runCli = async (): Promise<CliResults> => {
         noir: () => {
           return p.select({
             message: "Which contract type would you like to use?",
-            options: contractTypes.map(type => ({
+            options: noirContractTypes.map((type) => ({
               value: type,
-              label: type === "counter" ? "Counter Contract" : type,
+              label: getNoirTemplate(type).label,
             })),
             initialValue: "counter",
           });

@@ -3,9 +3,10 @@ import { type PackageManager } from "~/utils/getUserPkgManager.js";
 import { biomeInstaller } from "./biome.js";
 import { dynamicEslintInstaller } from "./eslint.js";
 import { noirInstaller } from "./noir.js";
+import { noirContractTypes, type NoirContractType } from "./noirTemplates.js";
 
-export const contractTypes = ["counter"] as const;
-export type ContractType = (typeof contractTypes)[number];
+export { noirContractTypes };
+export type ContractType = NoirContractType;
 
 // Turning this into a const allows the list to be iterated over for programmatically creating prompt options
 // Should increase extensibility in the future
